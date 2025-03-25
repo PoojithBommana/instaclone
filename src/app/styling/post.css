@@ -1,0 +1,79 @@
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .post-container {
+    width: 400px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #222;
+    margin-top: 30px;
+  }
+  
+  .post-image {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(to right, #9d0b0b, #ff0000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .logos {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .players{
+    z-index: 1000;
+  }
+  
+  .players img {
+    border-radius: 10px;
+  }
+  
+  .post-info {
+    padding: 10px;
+  }
+  
+  .likes {
+    font-weight: bold;
+  }
+  
+  .caption {
+    margin-top: 5px;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: #ff0000;
+  }
+  
+  .comments {
+    color: gray;
+    margin-top: 5px;
+  }
+  
+  .add-comment {
+    color: gray;
+    font-style: italic;
+  }
+  
