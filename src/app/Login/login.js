@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import "../styles/login.css"; // Import CSS file
+import { Cookie } from "next/font/google";
+
 
 const Login = () => {
   const [isSignup, setIsSignup] = useState(false); // Toggle between login/signup
@@ -34,7 +36,9 @@ const Login = () => {
         if (!res.ok) {
           throw new Error(data.message || "Something went wrong");
         }
+        console.log(data)
 
+        localStorage.setItem("token", data.token);
         // Successful login, redirect to home
         alert("Login successful!");
         router.push("/home");

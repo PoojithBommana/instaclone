@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 
 const SECRET_KEY = process.env.JWT_SECRET; // Securely store this in .env.local
 
-export async function POST(req) {
+export async function POST(req) { 
   const { email, password } = await req.json();
 
   try {
